@@ -77,6 +77,15 @@ const shortcuts = [
       return [start, end]
     },
   },
+  {
+    text: 'Last 3 months',
+    value: () => {
+      const end = new Date()
+      const start = new Date()
+      start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
+      return [start, end]
+    },
+  }
 ]
 </script>
 
